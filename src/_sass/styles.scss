@@ -1,2 +1,181 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+:root {
+  --ink: #14213d;
+  --muted: #5c667a;
+  --accent: #d9552f;
+  --accent-dark: #a83a1c;
+  --paper: #f7f8fb;
+  --line: #dfe3eb;
+}
+
+body {
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-dark);
+}
+
+.masthead .overlay {
+  background-color: #101a33;
+  opacity: 0.72;
+}
+
+.masthead .page-heading h1 {
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-intro,
+.portfolio-section,
+.portfolio-cta {
+  margin: 5rem 0;
+}
+
+.portfolio-intro h2,
+.portfolio-section h2,
+.portfolio-cta h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.portfolio-intro .lead {
+  color: var(--muted);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 44rem;
+}
+
+.intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.btn-outline-primary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: var(--paper);
+  border-top: 4px solid var(--accent);
+  padding: 2rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 0.35rem 0 1rem;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.project-card .project-number,
+.project-card .project-stack {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card a,
+.about-preview a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.about-preview {
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: 4rem 0;
+}
+
+.about-preview p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.portfolio-cta {
+  background: var(--ink);
+  color: white;
+  padding: 3rem;
+}
+
+.portfolio-cta .eyebrow {
+  color: #ff9b7d;
+}
+
+.portfolio-cta p {
+  color: #c9d0df;
+}
+
+@media (max-width: 767px) {
+  .portfolio-intro,
+  .portfolio-section,
+  .portfolio-cta {
+    margin: 3.5rem 0;
+  }
+
+  .project-grid,
+  .about-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .portfolio-cta {
+    padding: 1.5rem;
+  }
+}

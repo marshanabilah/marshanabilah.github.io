@@ -18,14 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Portfolio
+title: Marsha Nabilah Wibowo
+author: Marsha Nabilah Wibowo
 email: marshanabilahw@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/home" # the subpath of your site, e.g. /blog
-url: "https://marshanabilah.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: Software developer building clear, dependable web experiences.
+baseurl: ""
+url: "https://marshanabilah.github.io"
 github_username:  marshanabilah
 linkedin_username: marsha-nabilah-wibowo
 
