@@ -26,6 +26,7 @@ baseurl: ""
 url: "https://marshanabilah.github.io"
 github_username:  marshanabilah
 linkedin_username: marsha-nabilah-wibowo
+asset_version: 20260907-2
 
 # Build settings
 theme: jekyll-theme-clean-blog

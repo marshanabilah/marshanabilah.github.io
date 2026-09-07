@@ -82,8 +82,8 @@ header.masthead {
   opacity: 1;
 }
 
-.masthead .page-heading {
-  padding: 13rem 0 8rem;
+header.masthead .page-heading {
+  padding: 8rem 0 4rem;
   text-align: left;
 }
 
@@ -102,7 +102,7 @@ header.masthead {
   font-style: normal;
   font-weight: 400;
   line-height: 1.65;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   max-width: 38rem;
 }
 
@@ -129,7 +129,11 @@ header.masthead {
 .portfolio-intro,
 .portfolio-section,
 .portfolio-cta {
-  margin: 7rem 0;
+  margin: 5.5rem 0;
+}
+
+.portfolio-intro {
+  margin-top: 3.5rem;
 }
 
 .portfolio-intro h2,
@@ -305,7 +309,7 @@ header.masthead {
 }
 
 .about-story {
-  margin: 6rem 0;
+  margin: 3.25rem 0 5rem;
 }
 
 .about-chapter {
@@ -313,7 +317,7 @@ header.masthead {
   display: grid;
   gap: 2.5rem;
   grid-template-columns: minmax(8rem, 0.45fr) minmax(0, 1.55fr);
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 .chapter-label {
@@ -383,15 +387,48 @@ header.masthead {
   color: #c9d0df;
 }
 
-@media (max-width: 767px) {
-  .masthead .page-heading {
-    padding: 10rem 0 5rem;
+@media (min-width: 600px) and (max-width: 991px) {
+  header.masthead .page-heading {
+    padding: 5.5rem 0 3.25rem;
+  }
+
+  .portfolio-intro {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .portfolio-intro .eyebrow,
+  .portfolio-intro h2,
+  .portfolio-intro .lead,
+  .intro-actions {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .portfolio-intro .lead {
+    margin-top: 0;
+    max-width: 38rem;
+  }
+
+  .portfolio-section,
+  .portfolio-cta {
+    margin: 4.75rem 0;
+  }
+
+  .about-story {
+    margin-top: 2.75rem;
+  }
+}
+
+@media (max-width: 599px) {
+  header.masthead .page-heading {
+    padding: 7.5rem 0 3.25rem;
   }
 
   .portfolio-intro,
   .portfolio-section,
   .portfolio-cta {
-    margin: 4.5rem 0;
+    margin: 3.75rem 0;
   }
 
   .portfolio-intro,
@@ -403,7 +440,7 @@ header.masthead {
   }
 
   .about-story {
-    margin: 4rem 0;
+    margin: 2.25rem 0 4rem;
   }
 
   .portfolio-intro .eyebrow,
