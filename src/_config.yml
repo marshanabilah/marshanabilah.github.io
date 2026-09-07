@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Marsha Nabilah Wibowo
-author: Marsha Nabilah Wibowo
+title: Marsha Nabilah
+author: Marsha Nabilah
 email: marshanabilahw@gmail.com
-description: Software developer building clear, dependable web experiences.
+description: AI and data engineer focused on language models, machine learning, and reliable data systems.
 baseurl: ""
 url: "https://marshanabilah.github.io"
 github_username:  marshanabilah
