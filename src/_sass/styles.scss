@@ -210,6 +210,10 @@ header.masthead .page-heading {
   margin-top: 3rem;
 }
 
+.project-grid--single {
+  grid-template-columns: 1fr;
+}
+
 .project-card {
   background: #fff;
   border: 1px solid var(--line);
@@ -217,6 +221,28 @@ header.masthead .page-heading {
   padding: 2.5rem;
   position: relative;
   transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.project-card--featured {
+  min-height: 0;
+}
+
+.project-card-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-status {
+  background: var(--signal);
+  border-radius: 999px;
+  color: var(--accent-dark) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0.4rem 0.75rem;
 }
 
 .project-card + .project-card {

@@ -38,6 +38,24 @@ background: /img/bg-index.jpg
   </div>
 </section>
 
+<section class="portfolio-section" id="projects" aria-labelledby="projects-heading">
+  <p class="eyebrow">Projects</p>
+  <h2 id="projects-heading">Applied AI for day-to-day operations</h2>
+  <div class="project-grid project-grid--single">
+    <article class="project-card project-card--featured">
+      <div class="project-card-header">
+        <p class="project-number">01</p>
+        <p class="project-status">In progress</p>
+      </div>
+      <h3>Sales Telegram Bot</h3>
+      <p>A Telegram chatbot for warehouse and sales operations that turns Indonesian or English free-form messages into structured records with Claude. Users can review the parsed result before saving it to Google Sheets, switch between spreadsheet tabs, and manage data without leaving Telegram.</p>
+      <p>The webhook service runs on Google Cloud Run and includes Telegram user allowlisting and secret-token verification.</p>
+      <p class="project-stack">Python · Claude API · Telegram Bot API · Google Sheets API · Cloud Run · Docker</p>
+      <a href="https://github.com/{{ site.github_username }}/data_parser">View repository <span aria-hidden="true">&rarr;</span></a>
+    </article>
+  </div>
+</section>
+
 <section class="portfolio-section experience-section" id="experience" aria-labelledby="experience-heading">
   <p class="eyebrow">Experience</p>
   <h2 id="experience-heading">Engineering experience in production environments</h2>
