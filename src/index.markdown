@@ -62,7 +62,7 @@ background: /img/bg-index.jpg
   <div class="experience-list">
     <article class="experience-item">
       <div class="experience-meta">
-        <p>Nov 2022 — Mar 2024</p>
+        <p>Nov 2022 to Mar 2024</p>
         <p>Surabaya, Indonesia</p>
       </div>
       <div>
@@ -74,7 +74,7 @@ background: /img/bg-index.jpg
     </article>
     <article class="experience-item">
       <div class="experience-meta">
-        <p>Dec 2021 — Jun 2022</p>
+        <p>Dec 2021 to Jun 2022</p>
         <p>Remote</p>
       </div>
       <div>

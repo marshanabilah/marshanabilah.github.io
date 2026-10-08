@@ -20,7 +20,7 @@ permalink: /about/
     <p class="chapter-label">My background</p>
     <div>
       <h2 id="about-background">Research informed by production experience</h2>
-      <p>Before focusing on AI and data, I developed enterprise applications and supported data-integration workflows. That experience taught me to think beyond experiments—to consider testing, maintainability, collaboration, and how systems behave after they are released.</p>
+      <p>Before focusing on AI and data, I developed enterprise applications and supported data-integration workflows. That experience taught me to think beyond experiments and consider testing, maintainability, collaboration, and how systems behave after they are released.</p>
       <p>I bring that engineering perspective into my AI and data work, aiming for results that are not only interesting but also understandable and useful.</p>
     </div>
   </section>
