@@ -29,7 +29,7 @@ permalink: /about/
     <h2 id="about-contact-heading">Let’s talk</h2>
     <p>If you’d like to discuss an AI or data opportunity, research, or a potential collaboration, I’d be happy to hear from you.</p>
     <div class="about-links">
-      <a href="mailto:{{ site.email }}">Email me</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact me</a>
       <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
     </div>
   </section>

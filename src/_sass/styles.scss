@@ -418,6 +418,101 @@ header.masthead .page-heading {
   font-size: 0.95rem;
 }
 
+.contact-page {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 0.8fr) minmax(18rem, 1.2fr);
+  margin: 3.25rem 0 5rem;
+}
+
+.contact-intro h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+}
+
+.contact-intro > p:last-child,
+.form-privacy {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.contact-form {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.form-field label {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-field input,
+.form-field textarea {
+  background: #fff;
+  border: 1px solid var(--muted);
+  border-radius: 0;
+  color: var(--ink);
+  font: inherit;
+  padding: 0.8rem 0.9rem;
+  width: 100%;
+}
+
+.form-field textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  border-color: var(--accent);
+  outline: 3px solid var(--signal);
+  outline-offset: 2px;
+}
+
+.form-honeypot {
+  left: -9999px;
+  position: absolute;
+}
+
+.contact-form-footer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.form-status {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.form-status[data-state="success"] {
+  color: var(--accent-dark);
+}
+
+.form-status[data-state="error"] {
+  color: #8a2e2e;
+}
+
+.form-privacy {
+  font-size: 0.84rem;
+  margin: 1.25rem 0 0;
+}
+
 .portfolio-cta {
   background: var(--ink);
   color: white;
@@ -493,11 +588,17 @@ header.masthead .page-heading {
   .project-grid,
   .about-preview,
   .experience-item,
-  .about-chapter {
+  .about-chapter,
+  .contact-page {
     grid-template-columns: 1fr;
   }
 
   .about-story {
+    margin: 2.25rem 0 4rem;
+  }
+
+  .contact-page {
+    gap: 2rem;
     margin: 2.25rem 0 4rem;
   }
 

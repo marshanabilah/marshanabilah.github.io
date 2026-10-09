@@ -13,7 +13,7 @@ background: /img/bg-index.jpg
   <p class="lead">I'm Marsha Nabilah. My work sits between machine learning and data engineering, with research experience in large language models, natural language processing, and cross-lingual knowledge editing.</p>
   <div class="intro-actions">
     <a class="btn btn-primary" href="#research">See my research</a>
-    <a class="btn btn-outline-primary" href="mailto:{{ site.email }}">Get in touch</a>
+    <a class="btn btn-outline-primary" href="{{ '/contact/' | relative_url }}">Get in touch</a>
   </div>
 </section>
 
@@ -114,5 +114,5 @@ background: /img/bg-index.jpg
   <p class="eyebrow">Let’s connect</p>
   <h2 id="contact-heading">Have an opportunity or an interesting project?</h2>
   <p>I’d be happy to hear about it.</p>
-  <a class="btn btn-light" href="mailto:{{ site.email }}">Email me</a>
+  <a class="btn btn-light" href="{{ '/contact/' | relative_url }}">Send a message</a>
 </section>
