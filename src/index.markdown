@@ -41,7 +41,7 @@ background: /img/bg-index.jpg
 <section class="portfolio-section" id="projects" aria-labelledby="projects-heading">
   <p class="eyebrow">Projects</p>
   <h2 id="projects-heading">Applied AI for day-to-day operations</h2>
-  <div class="project-grid project-grid--single">
+  <div class="project-grid">
     <article class="project-card project-card--featured">
       <div class="project-card-header">
         <p class="project-number">01</p>
@@ -52,6 +52,17 @@ background: /img/bg-index.jpg
       <p>The webhook service runs on Google Cloud Run and includes Telegram user allowlisting and secret-token verification.</p>
       <p class="project-stack">Python · Claude API · Telegram Bot API · Google Sheets API · Cloud Run · Docker</p>
       <a href="https://github.com/{{ site.github_username }}/data_parser">View repository <span aria-hidden="true">&rarr;</span></a>
+    </article>
+    <article class="project-card">
+      <div class="project-card-header">
+        <p class="project-number">02</p>
+        <p class="project-status">In progress</p>
+      </div>
+      <h3>Gmail Expense Tracker</h3>
+      <p>An iPhone expense tracker that turns bank transaction emails into an on-device ledger. The current SwiftUI foundation parses supported BCA, Jago, OCTO CIMB, and Mandiri alerts, rejects duplicates, applies local merchant-category rules, and sends uncertain imports to a review screen.</p>
+      <p>The project uses read-only Gmail access by design. Gmail authentication and mailbox synchronization are the next development milestones.</p>
+      <p class="project-stack">Swift · SwiftUI · SwiftData · Python · FastAPI · SQLite · Gmail API</p>
+      <a href="https://github.com/{{ site.github_username }}/gmail-api">View repository <span aria-hidden="true">&rarr;</span></a>
     </article>
   </div>
 </section>
