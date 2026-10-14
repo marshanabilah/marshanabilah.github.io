@@ -59,9 +59,9 @@ background: /img/bg-index.jpg
         <p class="project-status">In progress</p>
       </div>
       <h3>Gmail Expense Tracker</h3>
-      <p>An iPhone expense tracker that turns bank transaction emails into an on-device ledger. The current SwiftUI foundation parses supported BCA, Jago, OCTO CIMB, and Mandiri alerts, rejects duplicates, applies local merchant-category rules, and sends uncertain imports to a review screen.</p>
-      <p>The project uses read-only Gmail access by design. Gmail authentication and mailbox synchronization are the next development milestones.</p>
-      <p class="project-stack">Swift · SwiftUI · SwiftData · Python · FastAPI · SQLite · Gmail API</p>
+      <p>An iPhone expense tracker that imports BCA QRIS payments from an owner-maintained Gmail label into a local SwiftData ledger. It uses Google Sign-In with read-only Gmail access, scans the previous 90 days on demand, and rejects duplicates using Gmail message IDs and transaction fingerprints.</p>
+      <p>Every imported payment goes to Review before it counts toward spending. The app can suggest categories from on-device merchant rules and also supports manual cash and e-wallet entries, monthly spending breakdowns, custom categories, and light or dark appearance.</p>
+      <p class="project-stack">Swift · SwiftUI · SwiftData · Gmail API · Google Sign-In</p>
       <a href="https://github.com/{{ site.github_username }}/gmail-api">View repository <span aria-hidden="true">&rarr;</span></a>
     </article>
   </div>
