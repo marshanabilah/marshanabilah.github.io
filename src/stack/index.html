@@ -1,0 +1,70 @@
+---
+layout: stack
+title: Tech stack explorer
+description: The languages behind my public GitHub work, connected to the repositories that use them.
+permalink: /stack/
+---
+
+<main
+  class="stack-explorer"
+  data-tech-stack-explorer
+  data-source="https://raw.githubusercontent.com/marshanabilah/marshanabilah/refs/heads/main/assets/tech-stack.json"
+>
+  <section class="stack-introduction" aria-labelledby="stack-introduction-heading">
+    <div>
+      <p class="eyebrow">Repository language map</p>
+      <h2 id="stack-introduction-heading">See the evidence behind each language.</h2>
+    </div>
+    <p>The chart is calculated from GitHub's detected language bytes across my eligible public repositories. Select a language to see the projects contributing to it.</p>
+  </section>
+
+  <div class="stack-status" id="stack-status" role="status" aria-live="polite">
+    Loading public repository data.
+  </div>
+
+  <div class="stack-error" id="stack-error" role="alert" hidden>
+    <p>The repository data could not be loaded. You can retry or view the source profile directly.</p>
+    <div class="stack-error-actions">
+      <button class="btn btn-primary" id="stack-retry" type="button">Retry loading data</button>
+      <a href="https://github.com/marshanabilah?tab=repositories">View public repositories</a>
+    </div>
+  </div>
+
+  <div class="stack-empty" id="stack-empty" hidden>
+    <p>No language data is currently available from eligible public repositories.</p>
+    <a href="https://github.com/marshanabilah?tab=repositories">View public repositories</a>
+  </div>
+
+  <div class="stack-workspace" id="stack-workspace" hidden>
+    <section class="stack-chart-section" aria-labelledby="stack-chart-heading">
+      <div class="stack-section-heading">
+        <div>
+          <p class="stack-section-number">01</p>
+          <h2 id="stack-chart-heading">Language share</h2>
+        </div>
+        <button class="stack-reset" id="stack-reset" type="button" aria-pressed="true">
+          Show all repositories
+        </button>
+      </div>
+      <p class="stack-method" id="stack-method"></p>
+      <div class="stack-chart" id="stack-chart" role="list"></div>
+    </section>
+
+    <section class="stack-repositories" aria-labelledby="stack-repositories-heading">
+      <div class="stack-section-heading">
+        <div>
+          <p class="stack-section-number">02</p>
+          <h2 id="stack-repositories-heading">Repository evidence</h2>
+        </div>
+        <p id="stack-selection">All represented languages</p>
+      </div>
+      <ul class="stack-repository-list" id="stack-repository-list"></ul>
+    </section>
+  </div>
+
+  <p class="stack-source-note">
+    Source: the public GitHub language API. Forks, archived repositories, disabled repositories, and private work are excluded.
+  </p>
+</main>
+
+<script src="{{ '/assets/tech-stack.js' | relative_url }}" defer></script>

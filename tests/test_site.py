@@ -147,6 +147,15 @@ class PortfolioSiteTests(unittest.TestCase):
 
         self.assertGreater(contact_links, 0)
 
+    def test_tech_stack_explorer_has_accessible_live_states(self) -> None:
+        stack_page = self.read_page("stack/index.html")
+
+        self.assertIn('data-tech-stack-explorer', stack_page)
+        self.assertIn('aria-live="polite"', stack_page)
+        self.assertIn('id="stack-retry"', stack_page)
+        self.assertIn('/assets/tech-stack.js', stack_page)
+        self.assertIn('https://github.com/marshanabilah', stack_page)
+
 
 if __name__ == "__main__":
     unittest.main()
