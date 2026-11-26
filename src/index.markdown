@@ -48,9 +48,9 @@ background: /img/bg-index.jpg
         <p class="project-status">In progress</p>
       </div>
       <h3>Sales Telegram Bot</h3>
-      <p>A Telegram chatbot for warehouse and sales operations that turns Indonesian or English free-form messages into structured records with Claude. Users can review the parsed result before saving it to Google Sheets, switch between spreadsheet tabs, and manage data without leaving Telegram.</p>
-      <p>The webhook service runs on Google Cloud Run and includes Telegram user allowlisting and secret-token verification.</p>
-      <p class="project-stack">Python · Claude API · Telegram Bot API · Google Sheets API · Cloud Run · Docker</p>
+      <p>A jastip order-management project evolving from a Telegram bot into a web dashboard. The dashboard gives one administrator tools to configure shops, parse pasted orders, review and save records, search existing orders, and update their statuses.</p>
+      <p>The Telegram bot accepts multiple public product links, extracts names and displayed prices, previews every proposed field, and writes confirmed orders to Google Sheets. The dashboard is currently a local development foundation; customer order lookup and a JPY-to-IDR price estimator are planned.</p>
+      <p class="project-stack">Python · Starlette · Anthropic API · Telegram Bot API · Beautiful Soup · Google Sheets API · Cloud Run · Docker</p>
       <a href="https://github.com/{{ site.github_username }}/data_parser">View repository <span aria-hidden="true">&rarr;</span></a>
     </article>
     <article class="project-card">
